@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-family: pixel-regular, 'Press Start 2P';
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(./assets/SVG/xddd.png);
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-position-x: center;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  /*----------HEADER-------------*/
+  .header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-bottom: 30px;
+    
+}
+.logo{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+.agumongif{
+    filter: brightness(1.1);
+    background-blend-mode: multiply;
+    width:200px;
+    height: auto;
+}
+/*--------------NAV-------------*/
+.navcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    margin-bottom: 50px;    
+}
+.navcontainer a{
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+.navcontainer a:hover{
+    color: grey;
+}
+
+[class*="col-"] {
+    width: 100%
+}
+
+
+/*----------------------DIGITAL WORLD-----------------------------*/
+
+.digital-world-img{
+    float: right;
+    width: 500px;
+}
+
+/*------------------------TAMERS-------------------------*/
+
+.tamersimg{
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+}
+/*------------------------DIGIMONS-------------------------*/
+
+.digimonimg{
+    width: 300px;
+    float: right;
+}
+/*------------------------DIGIVICE-------------------------*/
+.digivicegif{
+    width: 400px;
+    float: left;
+    padding-right: 20px;
+}
+
+/*------------------------EMBLEMS-------------------------*/
+
+.emblemimg{
+    width: 450px;
+    float: right;
+}
+ /*----------------FOOTER---------------------------*/
+  
+ .footer{
+    background: BLACK;
+    margin-top: 30px;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+ /*----------------FOOTER-NAV--------------------------*/ 
+.footernav{     
+       padding-left: 15px;
+       padding-right: 15px;
+       
+}
+.footernav li{
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.footernav a{
+       font-size: 15px;
+       padding: 10px;
+       color: whitesmoke; 
+       font-family: 'Press Start 2P', cursive;  
+}
+.footernav a:hover{
+       color: grey;
+}
+/*----------------FOOTER-GIF--------------------------*/ 
+.egggif{
+    padding:0px;
+    text-align: center;
+}
+.egggif img{
+   margin-top: 30px;
+   max-width: 100%;
+   width: 250px;
+   border-radius: 50px;
+   padding: 10px;
+}
+
+
+
+
+@media only screen and (min-width: 1040px) {
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}   
+  }
+  @media only screen and (max-width: 900px) {
+    /* Para MOBIL */
+
+    .digitalworld{
+        text-align: center;
+    }
+
+    .digital-world-img{
+        float: none; 
+        width: 100%;
+    }
+
+    .tamerstory{
+        text-align: center;
+    }
+    .tamersimg{
+        float: none;
+        width: 100%;
+    }
+    .digimonstory{
+        text-align: center;
+    }
+    .digimonimg{
+        float: none;
+        width: 100%;
+    }
+    .digivice-story{
+        text-align: center;
+    }
+    .digivicegif{
+        width: 100%;
+        float: none;
+    }
+    .emblemstory{
+        text-align: center;
+    }
+    .emblemimg{
+        float: none;
+        width: 100%;
+    }
+  }
+  /*-------------------- FUENTES AGREGADAS ------------------*/
+
+  @font-face { font-family: pixel-regular; 
+    src: url('./assets/font/pixelfont/Symtext.ttf'); }
+
+/*--------- ANIMACION  // DIVISOR DE SECCIONES-------*/
+
+.animation{
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animationhere1{
+    width: 2em;
+    height: 1em;
+    background-color: black;
+    border-radius: 0px 20px 20px 0px;
+    animation-name: movingtoright;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+   
+}
+.centerball{
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    animation-name: dissapear;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.animationhere2{
+    width: 2em;
+    height: 1em;
+    background-color: black;
+    border-radius: 20px 0px 0px 20px;
+    animation-name: movingtoleft;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes movingtoright {
+    0%{
+        transform: translate(-1em,0);
+        width: 2em;
+        height: 1em;
+        opacity: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+    20%{
+        border-radius: 20px; 
+    }
+    100%{  
+        transform: translate(8em,0);
+        width: 1em;
+        height: 1em;
+        opacity: 0%;
+        border-radius: 20px; 
+    }
+}
+
+@keyframes movingtoleft {
+    0%{
+        transform: translate(1em,0);
+        opacity: 100%;
+        width: 2em;
+        height: 1em;
+        border-radius: 20px 0px 0px 20px;
+    }
+    20%{
+        border-radius: 20px; 
+    }
+    100%{
+        transform: translate(-8em,0);
+        opacity: 0%;
+        width: 1em;
+        height: 1em;
+        border-radius: 20px; 
+
+    }
+}
+
+@keyframes dissapear {
+    0%{ 
+        transform: scale(1);
+    }
+    20%{
+        border-radius: 20px;
+    }
+    100%{
+        transform: scale(0);
+        border-radius: 20px;
+        opacity: 0%;
+        
+    }
+}

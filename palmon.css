@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: pixel-regular, 'Press Start 2P';
+}
+body{
+    background-image: url(./assets/SVG/xddd.png);
+    background-repeat:repeat-y;
+    background-size: cover;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+/*----------HEADER-------------*/
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-bottom: 30px;
+    
+}
+.logo{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+.agumongif{
+    filter: brightness(1.1);
+    background-blend-mode: multiply;
+    width:200px;
+    height: auto;
+}
+/*--------------NAV-------------*/
+.navcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    margin-bottom: 50px;    
+}
+.navcontainer a{
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+.navcontainer a:hover{
+    color: grey;
+}
+
+/* MENU LINKEABLE */
+.menu{
+    margin: 8% 0 8% 0;
+}
+
+ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+.menu li{
+    margin:0px 0px 5px 0px;
+    text-align:center;
+    font-size: 20px;
+    color: black;
+    padding:5px 0px 5px 10px;        
+}
+.menu li a{
+    color: black;        
+}
+
+.linktailmon,.linkpatamon{
+    background-image: linear-gradient(60deg, #796b02, #fedf00);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 0px;
+    border-right-width: 5px;
+    border-style: solid;
+   
+}
+.linktailmon:hover,.linkpatamon:hover{
+    animation-name: slideinyellow;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: white;
+   
+}
+.linkagumon,.linkpiyomon{
+    background-image: linear-gradient(60deg, #880918, #ef001c);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 0px;
+    border-right-width: 5px;
+    border-style: solid;
+
+   
+}
+.linkagumon:hover,.linkpiyomon:hover{
+    animation-name: slideinred;
+    
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: white;
+}
+.linkpalmon,.linktentomon{
+    background-image: linear-gradient(60deg, #01704d, #009c6b);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 0px;
+    border-right-width: 5px;
+    border-style: solid;
+    
+}
+.linkpalmon:hover,.linktentomon:hover{
+    animation-name: slideingreen;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: white;
+}
+
+.linkgabumon,.linkgomamon{
+    background-image: linear-gradient(60deg, #005c83, #009ade);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-width: 0px;
+    border-right-width: 5px;
+    border-style: solid;
+}
+.linkgabumon:hover,.linkgomamon:hover{
+    animation-name: slideinblue;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: white;
+}
+/*----------------- HISTORIA DIGIMON -------------------*/
+.digimonstory{
+    margin-top: 15px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    
+}
+.digimonstory p{
+    font-size: 20px;
+    margin:0px;
+    padding: 0px;
+    text-align: left;
+
+    
+}
+.digimonstory h2{
+font-family: 'Press Start 2P', cursive;
+font-size: 30px;
+padding-bottom: 10px;
+}
+
+/*------------CONTENEDOR DE IMAGENES Y DATOS DIGIMON------------*/
+
+.digimoncard{
+    border-style: solid;
+    border-color: rgb(77, 77, 77);
+    margin-top: 50px;
+    border-radius: 10px 10px 0px 0px;
+    margin-left:5% ;
+    margin-right: 5%; 
+    text-align: center;
+    padding-right: 20px;
+  
+}
+.agumon{
+
+    background: url(./assets/Sin\ título-1.png), linear-gradient(180deg, #01704d, #009c6b);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+  
+}
+
+/*---------------------IMAGEN DIGIMON-----------------------*/
+
+.image img{
+    max-width: 100%;
+    height: auto;
+       
+}
+
+/*----------------------STATS DIGIMON---------------------------*/
+.digimonstats{
+
+    box-shadow: rgb(255, 255, 255) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-image:url(./assets/SVG/7E1AA87E.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 0 20px 0px;
+    border-right: 5px solid #000000;
+    border-radius: 0px 40px 0px 17px;
+
+}
+.mainstatcolum{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    height:55px;
+    padding:0px 0px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.mainstatcolum-data{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    padding:5px 0px 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.mainstatcolum h2{
+    font-size: 1em;
+}
+.mainstatcolum-data h2{
+    font-size: 1em;
+}
+
+.type h2{
+    font-size: 1em;
+}
+.type{
+    padding:5px 0px 5px 10px;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.type img{
+    width: 45px;
+}
+.type a{
+    color: black;
+}
+.type a:hover{
+    color: grey;
+}
+
+#invisible{
+    opacity: 0%;
+
+ }
+/*-----------------------ABOUT DIGIMON--------------------------------*/
+.digimondata h2{
+    font-family:'Press Start 2P', cursive;
+    margin-bottom: 10px;
+}
+
+/* ----- PROBANDO LINEA EVOLUTIVA ----- */
+.evolutionline{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.evolutionline img{
+    margin-bottom: 10px;
+    width:250px;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
+.baby:hover, .rookie:hover, .champion:hover,.ultimate:hover,.mega:hover{
+    animation-name: sizechange;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+
+  /*----------------FOOTER---------------------------*/
+  
+.footer{
+    background: BLACK;
+    margin-top: 30px;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+ /*----------------FOOTER-NAV--------------------------*/ 
+.footernav{     
+       padding-left: 15px;
+       padding-right: 15px;
+       
+}
+.footernav li{
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footernav a{
+       font-size: 15px;
+       padding: 10px;
+       color: whitesmoke; 
+       font-family: 'Press Start 2P', cursive;  
+}
+.footernav a:hover{
+       color: grey;
+}
+/*----------------FOOTER-GIF--------------------------*/ 
+.egggif{
+        padding:0px;
+        text-align: center;
+}
+.egggif img{
+       margin-top: 30px;
+       max-width: 100%;
+       width: 250px;
+       border-radius: 50px;
+       padding: 10px;
+}
+   
+
+
+ /* Para Mobile */
+[class*="col-"] {
+    width: 100%
+}
+
+@media only screen and (min-width: 1000px) {
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .menu a{text-align: left;}
+  }
+  @media only screen and (max-width: 999px) {
+    /* Para escritorio */
+    .digimonstats{
+        margin-left: 10px;
+    }
+    
+    .mainstatcolum-data{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 0 0 5px 0;
+    }
+
+    .type, .type h2{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 0 0 5px 0;
+    }
+    #invisible{
+        height: 0px;
+    }    
+
+  }
+
+
+  /*-------------------- FUENTES AGREGADAS ------------------*/
+
+@font-face { font-family: pixel-regular; 
+    src: url('./assets/font/pixelfont/Symtext.ttf'); }
+
+
+    /*-------------------ANIMACION BORDE MENU----------------------------- */
+    @keyframes slideinred {
+        from {
+              border-style: solid;
+              border-color: rgb(216, 2, 2);
+              border-right-width: 10px;
+              
+        }
+      
+        to {
+            border-style: solid;
+            border-color: rgb(129, 0, 0);
+            border-right-width: 30px;
+            
+        }
+   
+      }
+
+      
+      @keyframes slideinyellow {
+        from {
+              border-style: solid;
+              border-color: #fedf00;
+              border-right-width: 10px;
+        }
+      
+        to {
+            border-style: solid;
+            border-color: #9b8901;
+            border-right-width: 30px;
+        }
+      }
+      @keyframes slideingreen {
+        from {
+              border-style: solid;
+              border-color: #009c6b;
+              border-right-width: 10px;
+        }
+        
+        to {
+            border-style: solid;
+            border-color: #006e4c;
+            border-right-width: 30px;
+        }
+      }
+      @keyframes slideinblue {
+        from {
+              border-style: solid;
+              border-color: #009ade;
+              border-right-width: 10px;
+        }
+      
+        to {
+            border-style: solid;
+            border-color: #006a97;
+            border-right-width: 30px;
+        }
+      }
+      
+  /*------------ANIMACION CAMBIO TAMAÑO------------------*/
+  
+
+  @keyframes sizechange {
+    from {
+        transform: scale(1.0);
+        
+    }
+  
+    to {
+        transform: scale(1.2);
+        
+    }
+  }
