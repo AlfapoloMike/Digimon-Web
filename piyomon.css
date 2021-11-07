@@ -259,7 +259,9 @@ padding-bottom: 10px;
     font-family:'Press Start 2P', cursive;
     margin-bottom: 10px;
 }
-
+.digimondata{
+    padding: 50px;
+}
 /* ----- PROBANDO LINEA EVOLUTIVA ----- */
 .evolutionline{
     margin-top: 50px;
