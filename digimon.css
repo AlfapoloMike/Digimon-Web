@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: pixelari-regular , cursive;
+    font-size: 20px;
+}
+body{
+    background-image: url(./assets/SVG/xddd.png);
+    background-repeat:repeat-y;
+    background-size: cover;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+/*----------HEADER-------------*/
+.header-background{
+    background: BLACK;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+.logo{
+    width: auto;
+    height: 160px;
+    max-height: 100%;
+}
+
+.agumongif{
+    width: auto;
+    filter: brightness(1.1);
+    background-blend-mode: multiply;
+    height: 160px;
+    max-height: 100%;
+}
+
+/*-------------HEADER-NAV-------------*/
+.navcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    margin: 0px 0px 100px 0px;
+    padding-top:30px;
+ 
+}
+.navcontainer a{
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.navcontainer a:hover{
+    color: grey;
+}
+
+    /*--------------------DIGIMON STORY-----------------------------*/
+
+.digimon-story{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+.story-container{
+    background: BLACK;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    border-radius: 10px;
+}
+.digimons-story article{
+    padding: 20px;
+    color: rgb(226, 226, 226);
+}
+.digimons-story h2{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.digimons-story p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.digis-gif{
+    border-radius: 30px;
+}
+.origin-p{
+    padding:0;
+}
+
+#va{
+    color: rgb(2, 124, 32);
+}
+#da{
+    color: rgb(4, 45, 158);
+}
+#vi{
+    color: rgb(156, 6, 6);
+}
+#na{
+    color: rgb(153, 153, 153);
+}
+
+    /*--------------------------DIGIMON LIST------------------------------*/
+
+.digimon-list-title h2{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.digimon-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.img-container h3{
+    text-align: center;
+    font-size: 2.5rem;
+    border-radius: 20px 20px 0 0;
+    font-family: pixelari-fit , cursive;
+    font-weight:bolder;
+
+}
+.img-container a{
+    color: black;
+}
+.img-container img{
+    height: 25rem;
+}
+.img-container{
+    transform: scale(0.8);
+}
+
+
+
+#agumon h3, #piyomon h3{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(90deg, #880918, #ef001c,#880918);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+#gabumon h3, #gomamon h3{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(90deg, #005c83, #009ade, #005c83);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+#palmon h3, #tentomon h3{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(90deg, #01704d, #009c6b, #01704d);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+#patamon h3, #tailmon h3{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(90deg, #796b02, #fedf00, #796b02);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+#agumon:hover,#piyomon:hover,#gabumon:hover,#palmon:hover,#patamon:hover,#tailmon:hover,#tentomon:hover,#gomamon:hover{
+    animation-name: resize;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+    /*-----------------------FOOTER---------------------------*/
+  
+  .footer{
+    background: BLACK;
+    margin-top: 30px;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+ /*---------------------FOOTER-NAV--------------------------*/ 
+.footernav{     
+       padding-left: 15px;
+       padding-right: 15px;
+       
+}
+.footernav li{
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.footernav a{
+       font-size: 30px;
+       padding: 5px;
+       color: whitesmoke; 
+       font-family: pixelari-fit , cursive; 
+}
+.footernav a:hover{
+       color: grey;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    color: white; 
+    font-family: pixelari-fit , cursive;
+    letter-spacing: 2px;
+    height: 190px;
+
+}
+/*----------------FOOTER-GIF--------------------------*/ 
+.egggif{
+        padding:0px;
+        text-align: center;
+}
+.egggif img{
+       margin-top: 30px;
+       max-width: 100%;
+       width: 250px;
+       border-radius: 50px;
+       padding: 10px;
+}
+
+ /* Para Mobile */
+ [class*="col-"] {
+    width: 100%
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1499px) {
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .menu a{text-align: left;}
+
+    .html-nav{
+        margin: 0 0 0 5%;
+  
+    }
+    .story-container{
+        margin: 1.5rem 3rem 3rem 3rem;
+    }
+  }
+
+  @media only screen and (min-width: 1500px) {
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .menu a{text-align: left;}
+
+    .html-nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: left;
+        align-items: center;
+        align-content: center;
+        margin: 0 0 0 10%;
+        
+    }
+    .story-container{
+        margin: 1.5rem 3rem 3rem 3rem;
+    }
+
+  }
+
+
+@keyframes resize {
+    0%{ 
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+ /*-------------------- ADDED FONTS------------------*/
+
+ @font-face { font-family: pixel-regular; 
+    src: url('./assets/font/pixelfont/Symtext.ttf'); }
+@font-face { font-family: pixelari-regular; 
+        src: url('./assets/font/Pixellari.ttf'); }
+@font-face { font-family: pixelari-fit; 
+            src: url('./assets/font/PIXELADE.TTF'); }
+

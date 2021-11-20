@@ -1,18 +1,18 @@
 *{
-    box-sizing: border-box;
+   
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 html{
-    font-family: pixel-regular, 'Press Start 2P';
+    font-family: pixelari-regular , cursive;
     scroll-behavior: smooth;
+    font-size: 20px;
 }
 body{
-    background-image: url(./assets/SVG/xddd.png);
+    background-image:url(./assets/SVG/xddd.png);
     background-repeat:repeat-y;
-    background-size: cover;
-    background-position-x: center;
 }
 .row::after {
     content: "";
@@ -25,54 +25,86 @@ body{
   }
 
   /*----------HEADER-------------*/
+  .header-background{
+    background: BLACK;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
 .header{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-bottom: 30px;
-    
+    justify-content: center;   
 }
 .logo{
-    max-width: 100%;
-    width: 500px;
-    height: auto;
+    width: auto;
+    height: 160px;
+    max-height: 100%;
 }
+
 .agumongif{
+    width: auto;
     filter: brightness(1.1);
     background-blend-mode: multiply;
-    width:200px;
-    height: auto;
+    height: 160px;
+    max-height: 100%;
 }
-/*--------------NAV-------------*/
+
+/*-------------HEADER-NAV-------------*/
 .navcontainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;   
-    margin-bottom: 50px;    
+    margin: 0px 0px 100px 0px;
+    padding-top:30px;
+ 
 }
 .navcontainer a{
     padding: 10px;
     font-size: 25px;
-    color: black;
+    color: white;
     text-align: center;
 }
 .navcontainer a:hover{
     color: grey;
 }
+/*---------------------TAMERS INTRO-------------------  */
+
+
+
+.digi-destinies-story{
+   display: flex;
+   flex-direction: column;
+   justify-content: stretch;
+   padding: 30px;
+   background-color: white;
+   border-radius: 10px;
+}
+
+.tamers-img{
+
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+}
+
+
 
   /*-----------------TAMERS NAV-------------------------*/
 
 
 .lefttamer h3, .righttamer h3{
-    padding-top: 40px;
+    padding-top: 30px;
     margin: 10px;
     font-family:'Press Start 2P', cursive;
-    height: 100px;
+    height: 40px;
     text-align: center;
     font-size: 25px;
     color: black;
     text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+
 }
 .fondored_l:hover h3,.fondored_r:hover h3, .fondoblue_l:hover h3, .fondoblue_r:hover h3, .fondogreen_l:hover h3,
 .fondogreen_r:hover h3, .fondoyellow_r:hover h3, .fondoyellow_l:hover h3{
@@ -108,7 +140,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 5px solid black;
-    border-radius: 40px 0px 40px 0px;
+    border-radius:10px;
     margin-bottom: 10px;
     
 }
@@ -129,7 +161,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 5px solid black;
-    border-radius: 40px 0px 40px 0px;
+    border-radius:10px;
     margin-bottom: 10px;
 }
 .matt{
@@ -147,7 +179,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 5px solid black;
-    border-radius: 40px 0px 40px 0px;
+    border-radius:10px;
     margin-bottom: 10px;
 }
 .izzy{
@@ -165,7 +197,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 5px solid black;
-    border-radius: 40px 0px 40px 0px;
+    border-radius:10px;
     margin-bottom: 10px;
 }
 .tk{
@@ -188,7 +220,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 5px solid black;
-    border-radius: 0px 40px 0px 40px;
+    border-radius:10px;
     margin-bottom: 10px;
 
 }
@@ -208,7 +240,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 5px solid black;
-    border-radius: 0px 40px 0px 40px;
+    border-radius:10px;
     margin-bottom: 10px;
 }
 .joe{
@@ -226,7 +258,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 5px solid black;
-    border-radius: 0px 40px 0px 40px;
+    border-radius:10px;
     margin-bottom: 10px;
 }
 .mimi{
@@ -244,7 +276,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 5px solid black;
-    border-radius: 0px 40px 0px 40px;
+    border-radius:10px;
     margin-bottom: 10px;
 }
 .ikari{
@@ -268,6 +300,7 @@ body{
     align-items: center;
     height: 300px;
 }
+
 .frienddigimon{
     margin-top: 30px;
     text-align: center;
@@ -283,11 +316,14 @@ text-align: center;
     max-width: 100%;
     height: auto;
 }
+.tamerstory{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .digimonimage{
-    width: 200px;
-    max-width: 100%;
-    height: auto;
-    float: right;
+    width: auto;
+    height: 15rem;
 }
 .tamerdata div{
     padding: 10px;
@@ -320,26 +356,51 @@ text-align: center;
     background-size: cover;
     background-repeat:repeat-x;
 }
- /*----------------FOOTER-NAV--------------------------*/ 
+  /*-----------------------FOOTER---------------------------*/
+  
+  .footer{
+    background: BLACK;
+    margin-top: 30px;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+ /*---------------------FOOTER-NAV--------------------------*/ 
 .footernav{     
        padding-left: 15px;
        padding-right: 15px;
        
 }
 .footernav li{
-    padding: 10px;
+    padding: 5px;
     align-content: center;
     align-items: center;
     text-align: center;
+    list-style: none;
 }
 .footernav a{
-       font-size: 15px;
-       padding: 10px;
+       font-size: 30px;
+       padding: 5px;
        color: whitesmoke; 
-       font-family: 'Press Start 2P', cursive;  
+       font-family: pixelari-fit , cursive; 
 }
 .footernav a:hover{
        color: grey;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    color: white; 
+    font-family: pixelari-fit , cursive;
+    letter-spacing: 2px;
+    height: 190px;
+
 }
 /*----------------FOOTER-GIF--------------------------*/ 
 .egggif{
@@ -353,21 +414,20 @@ text-align: center;
        border-radius: 50px;
        padding: 10px;
 }
-  
 
 
 [class*="col-"] {
     width: 100%
 }
 [class*="card"] {
-    margin-left: 10px;
-    margin-right: 10px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin: 3.5rem 3rem 3.5rem 3rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
 
 }
 
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1150px) {
     /* Para escritorio */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -390,6 +450,17 @@ text-align: center;
         justify-content: center;
         height: 500px;
     }
+    .digi-destinies-story{
+        display: flex;
+        flex-direction: row;
+        padding: 60px;
+        margin: 20px;
+        border-radius: 10px;
+     }
+     .black-bar{
+        display: block;
+    }
+    
   }
 
 @keyframes fliping {
@@ -411,10 +482,14 @@ text-align: center;
     
 }
 
-  /*-------------------- FUENTES AGREGADAS ------------------*/
+ /*-------------------- ADDED FONTS------------------*/
 
-  @font-face { font-family: pixel-regular; 
+ @font-face { font-family: pixel-regular; 
     src: url('./assets/font/pixelfont/Symtext.ttf'); }
+@font-face { font-family: pixelari-regular; 
+        src: url('./assets/font/Pixellari.ttf'); }
+@font-face { font-family: pixelari-fit; 
+            src: url('./assets/font/PIXELADE.TTF'); }
 
 
 

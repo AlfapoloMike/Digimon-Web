@@ -1,18 +1,17 @@
+
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 html{
-    font-family: pixel-regular, 'Press Start 2P';
-    scroll-behavior: smooth;
+    font-family: pixelari-regular , cursive;
+    font-size: 20px;
 }
 body{
     background-image: url(./assets/SVG/xddd.png);
     background-repeat:repeat-y;
     background-size: cover;
-    background-position-x: center;
 }
 .row::after {
     content: "";
@@ -23,45 +22,52 @@ body{
     float: left;
     padding: 15px;
   }
-  /*----------HEADER-------------*/
-  .header{
+
+/*----------HEADER-------------*/
+.header-background{
+    background: BLACK;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-bottom: 30px;
-    
+    justify-content: center;   
 }
 .logo{
-    max-width: 100%;
-    width: 500px;
-    height: auto;
+    width: auto;
+    height: 160px;
+    max-height: 100%;
 }
+
 .agumongif{
+    width: auto;
     filter: brightness(1.1);
     background-blend-mode: multiply;
-    width:200px;
-    height: auto;
+    height: 160px;
+    max-height: 100%;
 }
-/*--------------NAV-------------*/
+
+/*-------------HEADER-NAV-------------*/
 .navcontainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;   
-    margin-bottom: 50px;    
+    margin: 0px 0px 100px 0px;
+    padding-top:30px;
+ 
 }
 .navcontainer a{
     padding: 10px;
     font-size: 25px;
-    color: black;
+    color: white;
     text-align: center;
 }
 .navcontainer a:hover{
     color: grey;
-}
-
-[class*="col-"] {
-    width: 100%
 }
 
 
@@ -70,6 +76,7 @@ body{
 .digital-world-img{
     float: right;
     width: 500px;
+    border-radius: 10px;
 }
 
 /*------------------------TAMERS-------------------------*/
@@ -78,18 +85,26 @@ body{
     width: 300px;
     float: left;
     margin-right: 10px;
+    border-radius: 10px;
 }
 /*------------------------DIGIMONS-------------------------*/
 
 .digimonimg{
     width: 300px;
     float: right;
+    border-radius: 10px;
 }
 /*------------------------DIGIVICE-------------------------*/
 .digivicegif{
     width: 400px;
     float: left;
     padding-right: 20px;
+    border-radius: 10px;
+}
+.digivice-container, .emblem-container, .tamers-container, .digimon-container, .digitalworld-container{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+    margin: 2.5rem 0 2.5rem 0;
 }
 
 /*------------------------EMBLEMS-------------------------*/
@@ -97,6 +112,7 @@ body{
 .emblemimg{
     width: 450px;
     float: right;
+    border-radius: 10px;
 }
  /*----------------FOOTER---------------------------*/
   
@@ -108,43 +124,69 @@ body{
     background-size: cover;
     background-repeat:repeat-x;
 }
- /*----------------FOOTER-NAV--------------------------*/ 
+  /*-----------------------FOOTER---------------------------*/
+  
+  .footer{
+    background: BLACK;
+    margin-top: 30px;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+ /*---------------------FOOTER-NAV--------------------------*/ 
 .footernav{     
        padding-left: 15px;
        padding-right: 15px;
        
 }
 .footernav li{
-    padding: 10px;
+    padding: 5px;
     align-content: center;
     align-items: center;
     text-align: center;
     list-style: none;
 }
 .footernav a{
-       font-size: 15px;
-       padding: 10px;
+       font-size: 30px;
+       padding: 5px;
        color: whitesmoke; 
-       font-family: 'Press Start 2P', cursive;  
+       font-family: pixelari-fit , cursive; 
 }
 .footernav a:hover{
        color: grey;
 }
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    color: white; 
+    font-family: pixelari-fit , cursive;
+    letter-spacing: 2px;
+    height: 190px;
+
+}
 /*----------------FOOTER-GIF--------------------------*/ 
 .egggif{
-    padding:0px;
-    text-align: center;
+        padding:0px;
+        text-align: center;
 }
 .egggif img{
-   margin-top: 30px;
-   max-width: 100%;
-   width: 250px;
-   border-radius: 50px;
-   padding: 10px;
+       margin-top: 30px;
+       max-width: 100%;
+       width: 250px;
+       border-radius: 50px;
+       padding: 10px;
 }
 
-
-
+ /* Para Mobile */
+ [class*="col-"] {
+    width: 100%
+}
 
 @media only screen and (min-width: 1040px) {
     /* Para escritorio */
@@ -202,10 +244,15 @@ body{
         width: 100%;
     }
   }
-  /*-------------------- FUENTES AGREGADAS ------------------*/
+ /*-------------------- ADDED FONTS------------------*/
 
-  @font-face { font-family: pixel-regular; 
+ @font-face { font-family: pixel-regular; 
     src: url('./assets/font/pixelfont/Symtext.ttf'); }
+@font-face { font-family: pixelari-regular; 
+        src: url('./assets/font/Pixellari.ttf'); }
+@font-face { font-family: pixelari-fit; 
+            src: url('./assets/font/PIXELADE.TTF'); }
+
 
 /*--------- ANIMACION  // DIVISOR DE SECCIONES-------*/
 
